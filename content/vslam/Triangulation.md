@@ -1,6 +1,6 @@
 ---
 title: Triangulation
-draft: true
+draft: false
 ---
 # Triangulation
 
