@@ -1,7 +1,3 @@
----
-title: Triangulation
-draft: false
----
 # Triangulation
 
 To find out the feature point in world coordinate when it is observed at least in two camera frames
