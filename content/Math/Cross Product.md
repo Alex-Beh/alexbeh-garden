@@ -29,7 +29,7 @@ $$
 ## Use case
 
 ### Area of Parallelogram
-$|\vec{x}\times\vec{y}|=|\vec{x}||\vec{y}|\sin\Theta$
+$|\vec{x}\times\vec{y}|=|\vec{x}||\vec{y}|\sin\theta$
 ![[Area of Parallelogram.png]]
 ### Volume of Parallelepiped
 A parallelepiped is the three dimensional analogue of a parallelogram.

@@ -14,3 +14,22 @@ img {
 .markdown-source-view.mod-cm6 .cm-content > * {
     margin: auto auto !important;
 }
+
+/* Recent notes */
+.recent-notes {
+    & .recent-ul {
+      font-size: 0.85rem;
+  
+      & h3 {
+        font-size: 1rem;
+      }
+    }
+  
+    & > ul.recent-ul > li {
+      margin: 0;
+    }
+  
+    & .tag-link {
+      display: none;
+    }
+}
