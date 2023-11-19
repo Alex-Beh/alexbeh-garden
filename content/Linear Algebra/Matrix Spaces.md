@@ -50,4 +50,4 @@ The complete solution is:
 $$
 y = c_1\cos x + c_2\sin x,
 $$
-where $c_1$ and $c_2$ can be any complex numbers. The solution space is a two dimensional vector space with [[Basis]] vectors $\cos x$ and $\sin x$.
+where $c_1$ and $c_2$ can be any complex numbers. The solution space is a two dimensional vector space with [[Rank, Basis, Dimension#Basis|Basis]] vectors $\cos x$ and $\sin x$.

@@ -7,7 +7,9 @@ or, to put it in another way, closed under linear combinations.
 s.t. we call the collection a *vector space*.
 
 ## Matrix
+### Pivot Point
 - Associative
+	矩阵乘法虽然不能随意变动相乘次序，但是可以变动括号位置
 - Commutative
 ## Condition to solve $Ax=b$ or $Ax=0$
 - $A$ is invertible

@@ -42,6 +42,6 @@ $$
 P = \begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}.
 $$
 
-$P$ is a *permutation matrix* and the first and second rows of the matrix $PA$ are the second and first rows of the matrix $A$.
+$P$ is a **[[Matrix Type#Permutation Matrix|Permutation Matrix]]** and the first and second rows of the matrix $PA$ are the second and first rows of the matrix $A$.
 
 Note, matrix multiplication is *associative* but *not commutative*.

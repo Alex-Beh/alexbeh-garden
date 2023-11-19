@@ -1,11 +1,40 @@
 - [[#Identity Matrix|Identity Matrix]]
 - [[#Upper Triangular Matrix|Upper Triangular Matrix]]
 - [[#Lower Triangular Matrix|Lower Triangular Matrix]]
-- [[#Symmetric Matrix|Symmetric Matrix]]
+- [[#Symmetric Matrix|Symmetric Matrix]] ^b69769
 - [[#Diagonal Matrix|Diagonal Matrix]]
 - [[#[[Skew Symmetric Matrix]]|[[Skew Symmetric Matrix]]]]
 - [[#Square Matrix|Square Matrix]]
+## Permutation Matrix
+A permutation matrix  has rows of the identity in any order.
 
+Every row and every column of a permutation matrix contain exactly one nonzero entry,
+which is 1. There are two 2 × 2 permutation matrices: 
+$$
+\begin{bmatrix}
+1&0 \\ 
+0&1
+\end{bmatrix} \&
+\begin{bmatrix}
+0&1 \\ 
+1&0
+\end{bmatrix}
+$$
+Every permutation matrix is a product of elementary **row-interchange** matrices.
+$$
+\begin{bmatrix}
+0&1 \\ 
+1&0
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\ 
+x_2
+\end{bmatrix}=
+\begin{bmatrix}
+x_2\\ 
+x_1
+\end{bmatrix}
+$$
 ## Identity Matrix
 
 $$
@@ -37,6 +66,7 @@ a_{n1} & a_{n2} & a_{n3} & \ldots & a_{nn}
 \end{bmatrix}
 $$
 ## Symmetric Matrix
+$A=A^T$
 $$
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\

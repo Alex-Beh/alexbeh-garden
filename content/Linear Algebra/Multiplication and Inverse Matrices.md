@@ -50,9 +50,6 @@ AB = \sum_{k=1}{n}
 \begin{bmatrix}a_{1k} \\ \vdots \\ a_{mk}\end{bmatrix}
 \begin{bmatrix}b_{k1} & \cdots & b_{kp}\end{bmatrix}
 $$
-
->note: Here I fixed a typo in the [lecture summary (PDf)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf) of this session: $b_{kp}$ instead of the original $b_{kn}$.
-
 #### Blocks
 
 $$
