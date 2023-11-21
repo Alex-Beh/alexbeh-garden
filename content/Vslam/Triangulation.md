@@ -94,3 +94,10 @@ $$
 ```
 
 ```
+
+### Reference
+1. [多帧三角化原理](https://blog.csdn.net/xhtchina/article/details/127541440)
+2. [三角化特征点(triangulation)方法及实现对比](https://blog.csdn.net/weixin_41469272/article/details/123696963)
+3. [SLAM中多目三角化](https://rupingcen.blog.csdn.net/article/details/115602175?ydreferer=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hodGNoaW5hL2FydGljbGUvZGV0YWlscy8xMjc1NDE0NDA%3D?ydreferer=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hodGNoaW5hL2FydGljbGUvZGV0YWlscy8xMjc1NDE0NDA%3D?ydreferer=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hodGNoaW5hL2FydGljbGUvZGV0YWlscy8xMjc1NDE0NDA%3D?ydreferer=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hodGNoaW5hL2FydGljbGUvZGV0YWlscy8xMjc1NDE0NDA%3D)
+4. 
+
