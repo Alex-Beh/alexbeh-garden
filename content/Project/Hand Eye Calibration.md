@@ -1,0 +1,1 @@
+https://robotics.stackexchange.com/questions/7163/hand-eye-calibration

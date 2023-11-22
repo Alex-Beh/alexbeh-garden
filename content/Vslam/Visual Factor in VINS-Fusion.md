@@ -1,10 +1,11 @@
 ## projectionOneFrameTwoCamFactor
-Parameters to be optimized:
+Parameters to be optimised:
 
 1. $[P_{b_i}^w, q_{b_i}^w]$ : SE(3) pose of body in frame i
 2. $[P_{b_j}^w, q_{b_j}^w]$ : SE(3) pose of body in frame j
 3. $[p_{c}^b, q_{c}^b]$: Extrinsic parameter between body and camera
 4. $\lambda_l$: inverse depth, it is the depth of feature in frame i
+5. $t_d$: time difference between camera & imu
 
 ![[feature_factor.png]]
 $$
@@ -74,16 +75,15 @@ There are 4 Jacobian in Evaluate function.
   &+R_b^c(R_{b_j}^w(R_{b_i}^wp_c^b+p_{b_i}^w-p_{b_j}^w)-p_c^b)
   \end{align*} \tag{3}
   $$
-  What is our target? To find out the derivative of residual, which is the Jacobian
+  What is our target? To find out the derivative of residual, which is the **Jacobian** of [[Lie Group]]
 
   ![img](https://img-blog.csdnimg.cn/2a5ae2f5579442bc8c862e4fe694edd2.png)
 
-  By using Chain Rule:
-  $$
+  By using Chain Rule:  $$
   \frac{\delta r_c}{\delta P} = \frac{\delta r_c}{\delta f_{c_j}}*\frac{\delta f_{c_j}}{\delta P} \tag{4}
   $$
-  P consists of all the parameters that we want to optimize:
-
+  P consists of all the parameters that we want to optimise: 
+  [note: $t_d$ is missing in the picture]
   ![在这里插入图片描述](https://img-blog.csdnimg.cn/2b8635392eef49f69c42288795008f49.png)
 
 ​		For the first term in Equation(4), in code it is declare as **reduce**
@@ -96,8 +96,7 @@ $$
 $$
 ​		For the second term in Equation(4), let's take the derivative for each parameters
 
-1. Jacobian[0]
-   $$
+1. Jacobian[0]   $$
    \frac{\delta f_{c_j}}
    {\delta
    \begin{bmatrix}
@@ -117,8 +116,22 @@ $$
    $$
 
 2. Jacobian[1]
+   ```c++
+   Eigen::Matrix<double, 3, 6> jaco_j;
+   jaco_j.leftCols<3>() = ric.transpose() * -Rj.transpose();
+   jaco_j.rightCols<3>() = ric.transpose() * Utility::skewSymmetric(pts_imu_j);
+   ```
+   $$
+   jaco\_j_{3x6} = 
+   \begin{bmatrix}
+   | & - & | & | & - & | \\
+   | & \frac{\delta f_{c_j}}{\delta p_{b_i}^w} & | & | & \frac{\delta f_{c_j}}{\delta q_{b_i}^w} & | \\
+   | & - & | & | & - & | 
+   \end{bmatrix}
+   $$
 
-3. Jacobian[2]: about feature
+3. Jacobian[2]: extrinsic parameter between body and camera
+4. Jacobian[3]: about feature
    $$
    \begin{aligned}
    \frac{\partial \mathbf{r}_{\mathcal{C}}}{\partial \lambda_l} & =\frac{\partial \mathbf{r}_{\mathcal{C}}}{\partial p_l^{c_j}} \frac{\partial p_l^{c_j}}{\partial \lambda_l} \\
@@ -132,14 +145,12 @@ $$
    \end{aligned}
    $$
 
-4. Jacobian[3]: about time $t_d$
-
-​		
+5. Jacobian[4]: about time $t_d$
 
 ## Reference
 
 1. [VINS-MONO理论学习---紧耦合后端非线性优化](https://blog.csdn.net/xiaojinger_123/article/details/119669141)
-
 2. [VINS 系统中的视觉重投影因子](https://sxij.xyz/posts/visual-projection-factor-in-vins/)
+3. [VINS_FUSION入门系列－优化optimization](https://blog.csdn.net/pj_find/article/details/106497124)
 
    
