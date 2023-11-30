@@ -1,0 +1,2 @@
+
+![[stack_queue.png]]
