@@ -54,7 +54,7 @@ $$
    $$
 
 3. 
-![[Pasted image 20231130100928.png]]
+![[eigen_block.png]]
 ## Column-major and row-major storage
 
 1. Row-major
