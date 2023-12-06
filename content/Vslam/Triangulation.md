@@ -4,7 +4,7 @@ Given:
 
 - 2D image observations **[*u*,*v*]** in multiple frames.
 - Camera intrinsic matrix ***K***.
-- Camera poses **[$R_{c_i}^w$,$t_{c_i}^w$]** for each observation frame.
+- Camera poses **[$R_{w}^{c_i}$,$t_{w}^{c_i}$]** for each observation frame: it is from world frame to each camera frame
 
 ![[multiview_triangulation.png]]
 ## Theory
@@ -15,7 +15,7 @@ $$
 x\\
 y\\
 z
-\end{bmatrix} &= \frac{1}{s}*[R_{c_i}^w,t_{c_i}^w]*P^w \tag{1}&
+\end{bmatrix} &= \frac{1}{s}*[R_{w}^{c_i},t_{w}^{c_i}]*P^w \tag{1}&
 \begin{bmatrix}
 x\\
 y\\
@@ -26,7 +26,7 @@ u\\
 v\\
 1
 \end{bmatrix} 
-\end{align*} 
+\end{align*}
 $$
 ### Homogeneous Method
 - From Equation (1)
@@ -38,9 +38,9 @@ y\\
 z
 \end{bmatrix} &= \frac{1}{s} *
 \begin{bmatrix}
-{T_{c_i}^w}^1*P\\
-{T_{c_i}^w}^2*P\\
-{T_{c_i}^w}^3*P
+{T_{w}^{c_i}}^1*P\\
+{T_{w}^{c_i}}^2*P\\
+{T_{w}^{c_i}}^3*P
 \end{bmatrix}
 \end{align*} \\
 $$
@@ -62,18 +62,18 @@ y\\
 z
 \end{bmatrix} \times
 \begin{bmatrix}
-{T_{c_i}^w}^1*P\\
-{T_{c_i}^w}^2*P\\
-{T_{c_i}^w}^3*P
+{T_{w}^{c_i}}^1*P\\
+{T_{w}^{c_i}}^2*P\\
+{T_{w}^{c_i}}^3*P
 \end{bmatrix}
 $$
 - Transform into [[Skew Symmetric Matrix]]
 $$
 \begin{bmatrix}
 \begin{align*}
--{T_{c_i}^w}^2P&+y{T_{c_i}^w}^3P\\
-{T_{c_i}^w}^1P&-x{T_{c_i}^w}^3P\\
--y{T_{c_i}^w}^1P&+x{T_{c_i}^w}^3P\\
+-{T_{w}^{c_i}}^2P&+y{T_{w}^{c_i}}^3P\\
+{T_{w}^{c_i}}^1P&-x{T_{w}^{c_i}}^3P\\
+-y{T_{w}^{c_i}}^1P&+x{T_{w}^{c_i}}^3P\\
 \end{align*}
 \end{bmatrix} = 
 \begin{bmatrix}

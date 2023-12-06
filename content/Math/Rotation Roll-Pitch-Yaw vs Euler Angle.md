@@ -22,3 +22,5 @@ cout << "[roll-pitch-yaw] Rotation: " << endl
 ```
 
 https://web.mit.edu/2.05/www/Handout/HO2.PDF
+
+https://math.stackexchange.com/a/1681118/1133515
