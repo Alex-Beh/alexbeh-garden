@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>🤖 Beh Chun Jye</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on 🤖 Beh Chun Jye</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Eigen</title>
+    <link>https://quartz.jzhao.xyz/Libary/Eigen</link>
+    <guid>https://quartz.jzhao.xyz/Libary/Eigen</guid>
+    <description>API § Eigen::Matrix&lt;double, 2, 3&gt;: Matrix4f is a 2x3 matrix of doubles [a1​b1​​a2​b2​​a3​b3​​] Using block operations § Eigen::MatrixXfm(4,4)=​15913​261014​371115​481216​​(1) m.</description>
+    <pubDate>Mon, 20 Nov 2023 02:06:53 GMT</pubDate>
+  </item><item>
+    <title>Ceres</title>
+    <link>https://quartz.jzhao.xyz/Libary/Ceres</link>
+    <guid>https://quartz.jzhao.xyz/Libary/Ceres</guid>
+    <description>https://blog.csdn.net/LDST_CSDN/article/details/130674774.</description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Cross Product</title>
+    <link>https://quartz.jzhao.xyz/Math/Cross-Product</link>
+    <guid>https://quartz.jzhao.xyz/Math/Cross-Product</guid>
+    <description>Cross product is a binary operation on two vectors in three-dimensional space. It results in a vector that is perpendicular to both vectors. Vector products are also called cross products.</description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Singular Value decomposition</title>
+    <link>https://quartz.jzhao.xyz/Math/Singular-Value-decomposition</link>
+    <guid>https://quartz.jzhao.xyz/Math/Singular-Value-decomposition</guid>
+    <description></description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Skew Symmetric Matrix</title>
+    <link>https://quartz.jzhao.xyz/Math/Skew-Symmetric-Matrix</link>
+    <guid>https://quartz.jzhao.xyz/Math/Skew-Symmetric-Matrix</guid>
+    <description>A skew-symmetric matrix A is a square matrix whose transpose equals its negative, i,e. AT=−A a∧=​0a3​−a2​−a3​0a1​​a2​−a1​0​​ The main use case is it can simplify the Cross Product between two matrix into dot product.</description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Chrony</title>
+    <link>https://quartz.jzhao.xyz/Ubuntu/Chrony</link>
+    <guid>https://quartz.jzhao.xyz/Ubuntu/Chrony</guid>
+    <description>Overview § start &amp; stop chrony service check status sudo systemctl status chronyd.service # show last 20 lines journalctl -n 20 -u chrony Run chrony manually with custom command [mostly for sync] sudo chronyd -d &#039;server 10.</description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Group</title>
+    <link>https://quartz.jzhao.xyz/Vslam/Group</link>
+    <guid>https://quartz.jzhao.xyz/Vslam/Group</guid>
+    <description></description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Homogeneous Coordinates</title>
+    <link>https://quartz.jzhao.xyz/Vslam/Homogeneous-Coordinates</link>
+    <guid>https://quartz.jzhao.xyz/Vslam/Homogeneous-Coordinates</guid>
+    <description></description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Lie Group</title>
+    <link>https://quartz.jzhao.xyz/Vslam/Lie-Group</link>
+    <guid>https://quartz.jzhao.xyz/Vslam/Lie-Group</guid>
+    <description>Group.</description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item><item>
+    <title>Transformation Notation</title>
+    <link>https://quartz.jzhao.xyz/Vslam/Transformation-Notation</link>
+    <guid>https://quartz.jzhao.xyz/Vslam/Transformation-Notation</guid>
+    <description></description>
+    <pubDate>Mon, 20 Nov 2023 00:57:43 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

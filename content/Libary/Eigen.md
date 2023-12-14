@@ -24,6 +24,15 @@ $$
    T2.block<3,1>(0,3) = t1;
    ```
 
+4. Create Rotation Matrix from Eigen::AngleAxisd
+
+   ```c++
+   Eigen::AngleAxisd rotation_x = Eigen::AngleAxisd(-0.5 * M_PI, Eigen::Vector3d::UnitX());
+   Eigen::AngleAxisd rotation_y = Eigen::AngleAxisd(0.5 * M_PI, Eigen::Vector3d::UnitY());
+   
+   Eigen::Matrix3d rotation_matrix = rotation_x.matrix() * rotation_y.matrix();
+   ```
+
    
 
 ## Using block operations

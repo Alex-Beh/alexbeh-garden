@@ -1,0 +1,5 @@
+- Intrinsic
+  - Rotations about the axes of the rotating coordinate system XYZ, solidary with the moving body, which changes its orientation with respect to the extrinsic frame after each elemental rotation
+- Extrinsic
+  - Rotations about the axes xyz of the original coordinate system, which is assumed to remain motionless
+- 
