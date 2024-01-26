@@ -2,7 +2,7 @@
 - **Euler angles** refer to the angles in a sequence of rotations in a **body-fixed frame**.
 - **Roll-Pitch-Yaw** angles as a sequence of rotations relative to the **space frame**.
 
-![[Pasted image 20231207113447.png]]
+![[roll-pitch-yaw.png]]
 ## Example
 - Rotation Matrix of camera frame respect to imu/body frame
 $$
@@ -16,7 +16,7 @@ $$
 - Intrinsic: [ x: -90, y: 90, z: 0 ] === $R_xR_yR_z$ EulerXYZ about the body frame
 - Extrinsic: [ x: -90, y: 0, z: -90 ] === $R_zR_yR_x$ EulerZYX about the fixed frame
 - Both start from axis-X first, then axis-Y then axis-Z
-![[Pasted image 20231207114020.png]]
+![[camera-transformation-example.png]]
 ## Code
 ```c++
 Eigen::AngleAxisd rotation_x = Eigen::AngleAxisd(-0.5 * M_PI, Eigen::Vector3d::UnitX());

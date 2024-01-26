@@ -1,0 +1,5 @@
+- call stack
+- local variable at stack
+- reference types always on heap
+- value types on stack or heap
+- static variable always on heap because need to access anywhere from the code

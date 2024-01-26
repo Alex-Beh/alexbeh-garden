@@ -1,0 +1,2 @@
+In mathematics, a group is a set with an operation that satisfies the following constraints: the operation is associative and has an identity element, and every element of the set has an inverse element.
+![[Group_rules.png]]

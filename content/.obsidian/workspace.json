@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ae06638af9bd4cf5",
+        "id": "c055a7d80354793b",
         "type": "tabs",
         "children": [
           {
-            "id": "6c360d635e7d507d",
+            "id": "0694239efa79ee36",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/How To Add and Update Git Submodules.md",
+                "file": "Math/Rotation Roll-Pitch-Yaw vs Euler Angle.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 356.500732421875
   },
   "right": {
     "id": "18711c297b0b2e95",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/How To Add and Update Git Submodules.md",
+                "file": "Math/Rotation Roll-Pitch-Yaw vs Euler Angle.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/How To Add and Update Git Submodules.md",
+                "file": "Math/Rotation Roll-Pitch-Yaw vs Euler Angle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +115,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -125,17 +125,15 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/How To Add and Update Git Submodules.md"
+                "file": "Math/Rotation Roll-Pitch-Yaw vs Euler Angle.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,45 +145,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6c360d635e7d507d",
+  "active": "0694239efa79ee36",
   "lastOpenFiles": [
+    "Math/media/camera-transformation-example.png",
+    "Math/media/roll-pitch-yaw.png",
     "Math/Rotation Roll-Pitch-Yaw vs Euler Angle.md",
-    "Programming/How To Add and Update Git Submodules.md",
-    "Libary/STL",
-    "Pasted image 20231207113447.png",
-    "Pasted image 20231207114020.png",
-    "Math/Rotation.md",
-    "Vslam/Synchronization/Synchronization Verification.md",
-    "Libary/Eigen.md",
-    "Pasted image 20231130100928.png",
-    "Project/Pangolin Visualization.md",
-    "ROS2/ROSBAG2 API C++.md",
-    "Math/SE3 Pose Interpolation using B-spline.md",
-    "Ubuntu/Size of Files.md",
-    "ROS2/Quality of Service.md",
-    "ROS2/Colcon.md",
-    "Programming/Depth-first search.md",
-    "ROS2",
-    "Programming/Breadth-first search.md",
-    "Programming/Stack & Queue.md",
-    "S.md",
-    "Programming/media/stack_queue.png",
-    "Pasted image 20231125115843.png.md",
-    "Programming/media",
-    "Leetcode/Evaluate Division.md",
-    "Leetcode",
-    "Vslam/Visual Factor in VINS-Fusion.md",
-    "Vslam/Marginalization.md",
-    "Programming/C++ Mutex Lock.md",
+    "Project/media/rpm_to_angular.png",
+    "Project/media",
+    "Vslam/media/lie_algebra_differentiation.png",
+    "Vslam/Lie Algebra Differentition.md",
+    "Pasted image 20231231151008.png",
+    "Programming/Stack & Heap.md",
+    "Programming/Decode a bytestring.md",
+    "Programming/C++ delete.md",
+    "Programming/C++ malloc() & free().md",
     "Vslam/slideWindow() in VINS-Fusion.md",
-    "Programming",
-    "Vslam/Check_Parallax_in_VINS-Fusion.md",
-    "Project/Hand Eye Calibration.md",
-    "Project/Perspective Transform for Image.md",
-    "Vslam/Homogeneous Coordinates.md",
-    "Project",
     "Vslam/Lie Group.md",
-    "Untitled.canvas",
-    "Libary"
+    "Vslam/Lie Algebra.md",
+    "Programming/C++ Mutex Lock.md",
+    "Programming/Graph.md",
+    "Programming/Stack & Queue.md",
+    "Vslam/Synchronization/Sensor Synchronization.md",
+    "Good Blogs & Articles.md",
+    "Group_rules.png",
+    "index.md",
+    "Latex.md",
+    "ROS2/Colcon.md",
+    "ROS2/Troubleshooting/CMake error - common is required but boost was not found.md",
+    "ROS2/Troubleshooting",
+    "Miscellaneous/Convert .db3 to mcap.md",
+    "Miscellaneous/Set up personal SSH keys on Linux.md",
+    "Miscellaneous",
+    "Project/Designing a Mobile Robot.md",
+    "Sensor/IMU.md",
+    "Sensor",
+    "Project/Nvidia Jetson eMMC to SSD.md",
+    "Project/Nvidia BSP Linux Customization & Flashing.md",
+    "Vslam/Synchronization/Synchronization Verification.md",
+    "Programming/media/c++_profiling.png",
+    "Libary/STL",
+    "Pasted image 20231130100928.png",
+    "ROS2",
+    "Programming/media/stack_queue.png",
+    "Programming/media",
+    "Leetcode",
+    "Programming",
+    "Project",
+    "Untitled.canvas"
   ]
 }
